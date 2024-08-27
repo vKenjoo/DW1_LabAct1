@@ -1,0 +1,16 @@
+// Snowflake Schema
+digraph {
+	Medical_Visit_Fact [label=Medical_Visit_Fact color=lightblue shape=box style=filled]
+	Patient_Dimension [label=Patient_Dimension color=lightgreen shape=ellipse style=filled]
+	Patient_Dimension -> Medical_Visit_Fact
+	Physician_Dimension [label=Physician_Dimension color=lightgreen shape=ellipse style=filled]
+	Physician_Dimension -> Medical_Visit_Fact
+	Date_Dimension [label=Date_Dimension color=lightgreen shape=ellipse style=filled]
+	Date_Dimension -> Medical_Visit_Fact
+	Department_Dimension [label=Department_Dimension color=lightgreen shape=ellipse style=filled]
+	Department_Dimension -> Medical_Visit_Fact
+	Diagnosis_Dimension [label=Diagnosis_Dimension color=lightgreen shape=ellipse style=filled]
+	Diagnosis_Dimension -> Medical_Visit_Fact
+	Treatment_Dimension [label=Treatment_Dimension color=lightgreen shape=ellipse style=filled]
+	Treatment_Dimension -> Medical_Visit_Fact
+}
